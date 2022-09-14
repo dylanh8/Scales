@@ -12,8 +12,9 @@ void draw() {
   float cameraZ = cameraY / tan(fov / 2.0);
   float aspect = float(width)/float(height);
   
-   rotateX(PI/3 + mouseY/float(height) * PI);
+   rotateX(PI/3);
   rotateY(PI/3 + mouseY/float(height) * PI);
+ 
  
  
   System.out.println(mouseX);
@@ -52,8 +53,8 @@ fill(r, g, b);
 
 beginShape();
 int f=3;
-curveVertex(x,y);
-curveVertex(x,y);
+curveVertex(x+200,y+200);
+curveVertex(x+200,y);
 curveVertex(x-15*f,y+20*f);
 curveVertex(x-40*f,y+40*f);
 curveVertex(x-15*f,y+60*f);
