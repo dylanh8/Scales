@@ -1,35 +1,23 @@
 void setup() {
-  size(700, 700, P3D);  //feel free to change the size
+  size(700, 700);  //feel free to change the size
   //noLoop(); //stops the draw() function from repeating
 }
 void draw() {
  
  
+
  
- lights();
- float cameraY = height/2.0;
-  float fov = mouseX/float(width) * PI/2;
-  float cameraZ = cameraY / tan(fov / 2.0);
-  float aspect = float(width)/float(height);
-  
-   rotateX(PI/3);
-  rotateY(PI/3 + mouseY/float(height) * PI);
- 
- 
- 
-  System.out.println(mouseX);
-  System.out.println(mouseY);
-  int p=30;
+
   int f=5;
  boolean shift=true;
    for(int v=900; v>-90*(f/2); v= v-20*(f/2)){
      for(int u=900; u>-30*(f/2); u= u-15*(f/2)){
        if (shift==true){
          
-       scale(u+50, v, p);
+       scale(u+50, v);
        }
        else{
-         scale(u, v, p);
+         scale(u, v);
        }}
        if(shift==true){
          shift=false;
