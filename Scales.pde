@@ -16,7 +16,9 @@ void draw() {
   rotateY(PI/3 + mouseY/float(height) * PI);
  
  
-
+ 
+  System.out.println(mouseX);
+  System.out.println(mouseY);
   int p=30;
   int f=5;
  boolean shift=true;
